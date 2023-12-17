@@ -23,7 +23,7 @@ public class MainApp {
       userService.add(new User("User3", "Lastname3", "user3@mail.ru",
               new Car("toyota", 5)));
       userService.add(new User("User4", "Lastname4", "user4@mail.ru",
-              new Car("porsche", 911)));
+              new Car("toyota", 5)));
 
       List<User> users = userService.listUsers();
       for (User user : users) {
@@ -34,7 +34,7 @@ public class MainApp {
          System.out.println();
       }
 
-      userService.getUsersCarAndSeries("toyota", 5);
+      System.out.println(userService.getUsersCarAndSeries("toyota", 5));
 
       context.close();
    }

@@ -10,10 +10,8 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "model")
     private String model;
 
-    @Column(name = "series")
     private int series;
 
     @OneToOne(mappedBy = "car", cascade = CascadeType.ALL)
